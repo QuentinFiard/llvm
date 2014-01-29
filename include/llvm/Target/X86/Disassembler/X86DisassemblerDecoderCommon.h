@@ -9,8 +9,9 @@
  *
  * This file is part of the X86 Disassembler.
  * It contains common definitions used by both the disassembler and the table
- *  generator.
- * Documentation for the disassembler can be found in X86Disassembler.h.
+ * generator.
+ * Documentation for the disassembler can be found in
+ * include/llvm/Target/X86/Disassembler/X86Disassembler.h.
  *
  *===----------------------------------------------------------------------===*/
 
@@ -271,7 +272,7 @@ enum attributeBits {
   ENUM_ENTRY(IC_EVEX_L2_W_KZ,        3,  "requires EVEX_KZ, L2 and W")               \
   ENUM_ENTRY(IC_EVEX_L2_W_XS_KZ,     4,  "requires EVEX_KZ, L2, W and XS prefix")    \
   ENUM_ENTRY(IC_EVEX_L2_W_XD_KZ,     4,  "requires EVEX_KZ, L2, W and XD prefix")    \
-  ENUM_ENTRY(IC_EVEX_L2_W_OPSIZE_KZ, 4,  "requires EVEX_KZ, L2, W and OpSize")     
+  ENUM_ENTRY(IC_EVEX_L2_W_OPSIZE_KZ, 4,  "requires EVEX_KZ, L2, W and OpSize")
 
 #define ENUM_ENTRY(n, r, d) n,
 typedef enum {

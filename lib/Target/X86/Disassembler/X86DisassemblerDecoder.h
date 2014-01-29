@@ -9,7 +9,8 @@
  *
  * This file is part of the X86 Disassembler.
  * It contains the public interface of the instruction decoder.
- * Documentation for the disassembler can be found in X86Disassembler.h.
+ * Documentation for the disassembler can be found in
+ * include/llvm/Target/X86/Disassembler/X86Disassembler.h.
  *
  *===----------------------------------------------------------------------===*/
 
@@ -26,7 +27,7 @@ extern "C" {
 #define INSTRUCTION_IDS     \
   uint16_t instructionIDs;
 
-#include "X86DisassemblerDecoderCommon.h"
+#include "llvm/Target/X86/Disassembler/X86DisassemblerDecoderCommon.h"
 
 #undef INSTRUCTION_SPECIFIER_FIELDS
 #undef INSTRUCTION_IDS

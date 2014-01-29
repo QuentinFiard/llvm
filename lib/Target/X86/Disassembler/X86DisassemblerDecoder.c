@@ -9,7 +9,8 @@
  *
  * This file is part of the X86 Disassembler.
  * It contains the implementation of the instruction decoder.
- * Documentation for the disassembler can be found in X86Disassembler.h.
+ * Documentation for the disassembler can be found in
+ * include/llvm/Target/X86/Disassembler/X86Disassembler.h.
  *
  *===----------------------------------------------------------------------===*/
 

@@ -26,7 +26,7 @@ using namespace llvm::X86Disassembler;
 ///     THE END OF THIS COMMENT!
 ///
 /// The X86 disassembler emitter is part of the X86 Disassembler, which is
-/// documented in lib/Target/X86/X86Disassembler.h.
+/// documented in include/Target/X86/Disassembler/X86Disassembler.h.
 ///
 /// The emitter produces the tables that the disassembler uses to translate
 /// instructions.  The emitter generates the following tables:
@@ -128,7 +128,7 @@ void EmitDisassembler(RecordKeeper &Records, raw_ostream &OS) {
 
   // ARM and Thumb have a CHECK() macro to deal with DecodeStatuses.
   if (Target.getName() == "ARM" ||
-      Target.getName() == "Thumb" || 
+      Target.getName() == "Thumb" ||
       Target.getName() == "AArch64") {
     EmitFixedLenDecoder(Records, OS, Target.getName() == "AArch64" ? "AArch64" : "ARM",
                         "if (!Check(S, ", ")) return MCDisassembler::Fail;",
